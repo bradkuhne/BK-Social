@@ -1,0 +1,24 @@
+{
+  "name": "bk-social",
+  "version": "1.0.0",
+  "description": "Social Network that allows users to express thoughts, make friends, and allows for reactions to toughts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradkuhne/BK-Social.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6"
+  },
+  "bugs": {
+    "url": "https://github.com/bradkuhne/BK-Social/issues"
+  },
+  "homepage": "https://github.com/bradkuhne/BK-Social#readme"
+}
