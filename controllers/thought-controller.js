@@ -58,7 +58,7 @@ const thoughtController = {
             .catch(err => res.json(err));
     },
     // modify thought using thought id
-    //api/thought/:thoughtId
+    //api/thoughts/:thoughtId
     updateThought({ params, body }, res) {
         Thought.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
             .then(dbThoughtData => {
@@ -70,6 +70,8 @@ const thoughtController = {
             })
             .catch(err => res.json(err));
     },
+    // create a new reactions
+    // /api/thoughts/:thoughtId/reactions
     addReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
