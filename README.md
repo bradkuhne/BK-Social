@@ -1,10 +1,52 @@
 # BK-Social
 Social Network that allows users to express thoughts, make friends, and allows for reactions to toughts.
 
-Github repo link:
-Screencastify recording link:
+Github repo link:  https://github.com/bradkuhne/BK-Social
+Screencastify recording link:  
 
-INSERT PROFESSIONAL README HERE
+## Description
+  
+ BK-Social is a backend social networking application that allows users to apply Create, Read, Update and Delete actions on Users, Friends, Thoughts and Reactions to Thoughts. BK-Social does not have a front-end but it is ready for one to be built for it.  The application uses MongoDB, Mongoose and Express.js.
+  
+## License
+  
+ [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+  
+ The Unlicense is a template for disclaiming copyright monopoly interest in software you've written; in other words, it is a template for dedicating your software to the public domain. It combines a copyright waiver patterned after the very successful public domain SQLite project with the no-warranty statement from the widely-used MIT/X11 license.
+  
+## Table of Contents
+  
+* [Installation](#Installation)
+  
+* [Usage](#Usage)
+  
+* [Contributions](#Contributions)
+  
+* [Tests](#Tests)
+  
+* [Questions](#Questions)
+  
+## Installation
+  
+ To install BK-Social you just need to have MongoDB, Mongoose and Express.js installed.  After that, just enter 'NPM Start'.
+  
+## Usage
+  
+ The BK-Social application should be used by someone wanting to utilize a pre-made backend for a social networking application.
+  
+## Contributions
+  
+ This project was solely developed by Brad Kuhne.
+  
+## Test Instructions
+  
+ This project was not developed with TDD.  To test it, run index.js and utilize a tool such as Insomnia to test all of the rountes and compare the rersults to expected results.
+  
+## Questions
+  
+ https://github.com/bradkuhne  Email: bjkuhne@aol.com
+
+## Addtional Information
 
 User Story
 AS A social media startup
