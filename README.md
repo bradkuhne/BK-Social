@@ -1,8 +1,8 @@
 # BK-Social
-Social Network that allows users to express thoughts, make friends, and allows for reactions to toughts.
+Social Network that allows users to be added and removed, users to express thoughts, make friends, and allows for reactions to toughts.
 
 Github repo link:  https://github.com/bradkuhne/BK-Social
-Screencastify recording link:  
+Screencastify recording link:  https://drive.google.com/file/d/1AuiOUGBt6sHIgpUJV0PQ9OdfJ_yAXmU6/view
 
 ## Description
   
