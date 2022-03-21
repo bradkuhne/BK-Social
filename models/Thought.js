@@ -13,7 +13,7 @@ const ReactionSchema = new Schema(
             trim: true,
             maxlength: 280
         },
-        username: {
+        userName: {
             type: String,
             required: "Please enter your name.  It is required."
         },

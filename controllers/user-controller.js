@@ -62,7 +62,7 @@ const userController = {
     },
     //delete a user
     deleteUser({ params }, res) {
-        Thought.deleteMany({ UserId: params.id })
+        Thought.deleteMany({ _id: params.id })
             .then(() => {
                 User.findOneAndDelete({ _id: params.id })
                     .then(dbUserData => {
@@ -76,11 +76,11 @@ const userController = {
             .catch(err => res.status(400).json(err));
     },
     //add a friend
-    // /api/users/:userid/friends
-    addFriend({ params, body }, res) {
+    // /api/users/:userid/friends/:friendId
+    addFriend({ params }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
-            { $push: { friends: body }},
+            { $push: { friends: params.friendId }},
             { new: true }
         )
             .then((dbUserData) => {
@@ -93,7 +93,7 @@ const userController = {
             .catch((err) => res.status(400).json(err));
     },
     // delete a friend
-    // /api/user/:userid/friends/:friendID
+    // /api/user/:userid/friends/:friendId
     deleteFriend({ params }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
