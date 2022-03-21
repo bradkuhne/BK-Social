@@ -18,7 +18,7 @@ const thoughtController = {
     },
     //get thought by thought id
     getThoughtById({ params }, res) {
-        Thought.findOne({ _id: params.id })
+        Thought.findOne({ _id: params.thoughtId })
             .populate({
                 path: 'reactions',
                 select: '-__v'
@@ -27,7 +27,8 @@ const thoughtController = {
             .sort({ _id: -1 })
             .then(dbThoughtData => {
                 if (!dbThoughtData) {
-                    res.status(400).json(err)
+                    console.log("You did not find a thought with this id: " + params.thoughtId);
+                    res.status(800).json(err)
                     return;
                 }
                 res.json(dbThoughtData);

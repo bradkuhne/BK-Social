@@ -8,12 +8,11 @@ router
     .route('/')
     .get(getAllThought);
     
-// thoughts by userId
+// Add a thought by userId and push to a user
 // /api/thoughts/:userId
 router
     .route('/:userId')
-    .post(addThought)
-        
+    .post(addThought)     
 
 // thoughts by thoughtId
 router

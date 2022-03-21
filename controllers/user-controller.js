@@ -62,9 +62,9 @@ const userController = {
     },
     //delete a user
     deleteUser({ params }, res) {
-        Thought.deleteMany({ userId: params.id })
+        Thought.deleteMany({ UserId: params.id })
             .then(() => {
-                User.findOneAndDelete({ userId: params.id })
+                User.findOneAndDelete({ _id: params.id })
                     .then(dbUserData => {
                         if (!dbUserData) {
                             res.status(404).json({ message: 'No user with that id found to delete.' });
@@ -76,11 +76,11 @@ const userController = {
             .catch(err => res.status(400).json(err));
     },
     //add a friend
-    // /api/user/:userid/friends/:friendID
-    addFriend({ params }, res) {
+    // /api/users/:userid/friends
+    addFriend({ params, body }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
-            { $push: { friends: params.friendId } },
+            { $push: { friends: body }},
             { new: true }
         )
             .then((dbUserData) => {

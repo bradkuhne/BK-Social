@@ -46,7 +46,7 @@ const ThoughtSchema = new Schema({
         default: Date.now,
         get: (createdAtVal) => dateFormat(createdAtVal)
     },
-    username: {
+    userName: {
         type: String,
         required: "You must enter a user name!"
     },
