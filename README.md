@@ -2,7 +2,7 @@
 Social Network that allows users to be added and removed, users to express thoughts, make friends, and allows for reactions to toughts.
 
 Github repo link:  https://github.com/bradkuhne/BK-Social
-Screencastify recording link:  https://drive.google.com/file/d/1AuiOUGBt6sHIgpUJV0PQ9OdfJ_yAXmU6/view
+Screencastify recording link:  https://drive.google.com/file/d/1Sj5NOg5aA7D90wXZffZizSdAWYVZr-VC/view
 
 ## Description
   
